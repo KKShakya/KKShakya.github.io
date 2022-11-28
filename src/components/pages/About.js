@@ -4,6 +4,7 @@ import React from "react";
 function About() {
   return (
     <Box m="100px 0  0" id="about">
+
       <Image src="https://avatars.githubusercontent.com/u/33806451?v=4" borderRadius={"50%"} h={"200px"} m='auto'  mb={'10px'}/>
       <Heading textAlign={"center"} style={{ color: "#fe3201" }}>
         About Me
