@@ -1,0 +1,36 @@
+.app__about {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__timeline-container{
+    margin-top: 3rem;
+
+    
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1rem;
+  max-width: .5rem 0;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem 2rem !important;
+}
+
+.vertical-timeline::before{
+    background-color: var(--secondary-color);
+}
+
+
+.vertical-timeline:before {
+  background: var(--line-color);
+  content: "";
+  height: 100%;
+  left: 18px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}

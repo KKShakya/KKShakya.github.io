@@ -19,7 +19,14 @@ function Navbar() {
       justify={"space-between"}
       px={{ base: 4, md: 10 }}
       p="1em"
-      box-shadow="rgba(0, 0, 0, 0.1) 0px 1px 2px 0px"
+      as="header"
+      position="fixed"
+      backgroundColor="rgba(255, 
+        255, 255, 0.8)"
+      backdropFilter="saturate(180%) blur(0.5px)"
+     top={0}
+     w="100%"
+     h={'fit-content'}
     >
       <Link
         activeClass="active"
@@ -28,15 +35,18 @@ function Navbar() {
         offset={-80}
         duration={500}
       >
-        <Box fontFamily= 'Dancing Script' textShadow= "4px 4px 4px #aaa">
-          <Image
+        <Box
+          fontFamily="Dancing Script"
+          textShadow="4px 4px 4px #aaa"
+        >
+          {/* <Image
             src={Logo}
             w="70px"
             cursor={"pointer"}
             my={-3}
             h={"70px"}
             borderRadius={"50%"}
-          />
+          /> */}
           Krishna Shakya
         </Box>
       </Link>
@@ -59,11 +69,12 @@ function Navbar() {
             </button>
           </Link>
         ))}
-       {/* resume button */}
-            <a href="https://drive.google.com/file/d/1s-R92_-qT7yQlM0i9dKE6cdqGhuCd022/view?usp=sharing"><button className="btn">
-              <span>Resume</span>
-            </button></a>
-         
+        {/* resume button */}
+        <a href="https://drive.google.com/file/d/1s-R92_-qT7yQlM0i9dKE6cdqGhuCd022/view?usp=sharing">
+          <button className="btn">
+            <span>Resume</span>
+          </button>
+        </a>
       </Flex>
       <Menus />
     </Flex>
