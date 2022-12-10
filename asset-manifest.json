@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.87c2728c.css",
-    "main.js": "/static/js/main.9c195d30.js",
+    "main.css": "/static/css/main.58ca35fa.css",
+    "main.js": "/static/js/main.5fd9eca7.js",
     "static/media/Krishna_Shakya_Resume.pdf": "/static/media/Krishna_Shakya_Resume.c8e0ef96925a58041020.pdf",
     "index.html": "/index.html",
-    "main.87c2728c.css.map": "/static/css/main.87c2728c.css.map",
-    "main.9c195d30.js.map": "/static/js/main.9c195d30.js.map"
+    "main.58ca35fa.css.map": "/static/css/main.58ca35fa.css.map",
+    "main.5fd9eca7.js.map": "/static/js/main.5fd9eca7.js.map"
   },
   "entrypoints": [
-    "static/css/main.87c2728c.css",
-    "static/js/main.9c195d30.js"
+    "static/css/main.58ca35fa.css",
+    "static/js/main.5fd9eca7.js"
   ]
 }
