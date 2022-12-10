@@ -1,14 +1,14 @@
 import React from "react";
-import { Flex, Box, Image } from "@chakra-ui/react";
-import Logo from "../components/Images/Michelle.gif";
+import { Flex, Box } from "@chakra-ui/react";
+import style from '../components/style/Navbar.module.css'
 import { Link } from "react-scroll";
 import Menus from "./Menu";
 
 const btns = [
   { title: "Home", to: "home" },
   { title: "About Me", to: "about" },
+  { title: "Projects", to: "projects" },
   { title: "Skills", to: "skills" },
-  { title: "Projects", to: "project" },
   { title: "Contact", to: "contact" },
 ];
 
@@ -36,17 +36,8 @@ function Navbar() {
         duration={500}
       >
         <Box
-          fontFamily="Dancing Script"
-          textShadow="4px 4px 4px #aaa"
+          className={style.neon_light}
         >
-          {/* <Image
-            src={Logo}
-            w="70px"
-            cursor={"pointer"}
-            my={-3}
-            h={"70px"}
-            borderRadius={"50%"}
-          /> */}
           Krishna Shakya
         </Box>
       </Link>

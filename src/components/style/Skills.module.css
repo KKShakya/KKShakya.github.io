@@ -1,0 +1,71 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  max-width: 250px;
+  min-width:150px;
+  padding-bottom: 8px;
+  background-color: white;
+}
+
+.card img{
+  width:40%;
+  height: 50%;
+  border-radius: 50%;
+  background-image: linear-gradient(60deg, #3f4e4a, #41c9e1);
+  padding: 5px;
+  margin-top: -20px;
+}
+
+.card h2{
+  margin: 6px 0;
+  font-family: cursive;
+  color:#057082;
+}
+
+.cont{
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.8s ease;
+  overflow-y:scroll;
+}
+
+.cont::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	background-color: #CCCCCC;
+}
+
+.cont::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.cont::-webkit-scrollbar-thumb
+{
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgb(50, 88, 94) 0%,
+											  rgb(59, 86, 105) 25%,
+											  transparent 100%,
+											  rgba(0, 0, 0, 1) 75%,
+											  transparent)
+}
+
+
+
+
+.card:hover > .cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height:100px;
+}
+

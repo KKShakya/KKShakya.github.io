@@ -1,30 +1,20 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  Text,
-  Image,
-  Grid,
-  Flex,
-  background,
-} from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Grid } from "@chakra-ui/react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-
 import { FaGraduationCap } from "react-icons/fa";
-import resume from "./Krishna_Shakya_Resume.pdf";
+import resume from "../data/Krishna_Shakya_Resume.pdf";
 import timeline from "../data/timeline";
 import "react-vertical-timeline-component/style.min.css";
 import "../style/timeline.css";
 
-
 function About() {
   return (
-    <Box m="100px 0  0" id="about" background="#EDEDED" pt={'5rem'}>
-      <Heading textAlign={"center"} color="#2196f3" >
+    <Box m="100px 0  0" id="about" background="#EDEDED" pt={"5rem"}>
+      <Heading textAlign={"center"} color="#2196f3">
         About Me
       </Heading>
       <Grid
@@ -42,6 +32,7 @@ function About() {
             fontSize={{ base: 16, md: 18, lg: 20 }}
             textAlign={"center"}
             fontFamily="cursive"
+            mb={"40px"}
           >
             Hello, glad to see you here. I'm an ordinary fella from a small town
             Shivpuri, Madhya Pradesh. I have done my graduation from Lovely
@@ -49,43 +40,56 @@ function About() {
             passionate full stack web developer skilled in React, Redux,
             Chakra-UI, NodeJS, JavaScript.
           </Text>
+
+          {/* resume button */}
+          <a
+            className="resume_button"
+            textAlign={"center"}
+            href={resume}
+            download="Krishna_Shakya_Resume.pdf"
+          >
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            Resume
+          </a>
         </Box>
 
-        <Box>
-          <Image
-            src="https://avatars.githubusercontent.com/u/33806451?v=4"
-            borderRadius={"50%"}
-            h={{ base: "200px", md: "300px" }}
-            m="auto"
-            mb={"10px"}
-          />
-          <a href={resume} download="Krishna_Shakya_Resume.pdf">
-            <Flex
-              w={"200px"}
-              gap={2}
-              my="4"
-              p={2}
-              borderRadius={"2xl"}
-              fontSize="20px"
-              alignItems="center"
-              justifyContent={"center"}
-              classNameName="downloadbtn"
+        <Box mt={{ base: "50px", md: "10px" }}>
+          {/* avatar profile pic */}
+          <Box
+            borderRadius={"30% 70% 70% 30% / 30% 30% 70% 70%  "}
+            h="400px"
+            background={"#2196f3"}
+          >
+            <Box
+              borderRadius={"30% 70% 70% 30% / 30% 30% 70% 70%  "}
+              h="300px"
+              background={"#fff"}
             >
-              Resume
-            </Flex>
-          </a>
+              <Image
+                src="https://avatars.githubusercontent.com/u/33806451?v=4"
+                borderRadius={"30% 70% 70% 30% / 30% 30% 70% 70%  "}
+                h={{ base: "200px", md: "300px" }}
+                m="auto"
+                mb={"10px"}
+              />
+            </Box>
+          </Box>
         </Box>
       </Grid>
 
       {/* ?timeline for Education */}
 
-      <VerticalTimeline className="app__timeline-container">
+     <Box m={10} p={10}>
+     <VerticalTimeline className="app__timeline-container">
         {timeline.map((elem) => (
           <VerticalTimelineElement
             key={elem.id}
             date={elem.date}
             dateClassName="timeline-date"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<FaGraduationCap />}
           >
             <h3 className="vertical-timeline-element-title">{elem.title}</h3>
@@ -96,6 +100,7 @@ function About() {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
+     </Box>
     </Box>
   );
 }
