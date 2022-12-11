@@ -1,8 +1,10 @@
+import bluemercury from '../Images/BlueMercury.png' 
+import beyoung from '../Images/BeYoung.png' 
 export const ProjectData = [
   {
       "name": "BeYoung",
       "desc": "This is an Ecommerce website made with ReactJS and Chakra UI . I have used Myntra API here for the products sections. You can have different sections Kids, women's and men's .You can shop around for your choice.",
-      "img": "https://i.ibb.co/hFjsRVB/image.png",
+      "img": beyoung,
       "git": "https://github.com/KKShakya/BeYoung",
       "deploy": "https://6370f66c528c784a0d465a3d--beyoungcontructweek.netlify.app/",
       "techStack":[
@@ -29,7 +31,7 @@ export const ProjectData = [
   {
       "name": "BlueMercury",
       "desc": "An ecommerce website clone named as- Bluemercy, a cosmetic shopping website. You can Browse all the products you want and put them in cart if you like . Sort them , filter them and choose form your range. Add to cart and checkout. ",
-      "img": "https://i.ibb.co/KzRsHGw/image.png",
+      "img": bluemercury,
       "git": "https://github.com/KKShakya/BlueMercury",
       "deploy": "https://bluemercury-tawny.vercel.app/",
       "techStack":[

@@ -14,7 +14,7 @@ import "../style/timeline.css";
 function About() {
   return (
     <Box m="100px 0  0" id="about" background="#EDEDED" pt={"5rem"}>
-      <Heading textAlign={"center"} color="#2196f3">
+      <Heading align={"center"} color="#2196f3">
         About Me
       </Heading>
       <Grid
