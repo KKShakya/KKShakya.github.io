@@ -23,6 +23,7 @@ import {
   BsLinkedin,
   BsPerson,
   BsReverseLayoutTextWindowReverse,
+  BsFillTelephoneFill,
 } from "react-icons/bs";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
@@ -95,7 +96,7 @@ function Contact() {
             >
               Get in Touch
             </Heading>
-
+            
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: "column", md: "row" }}
@@ -116,6 +117,27 @@ function Contact() {
                     size="lg"
                     fontSize="3xl"
                     icon={<MdEmail />}
+                    _hover={{
+                      bg: "blue.500",
+                      color: useColorModeValue("white", "gray.700"),
+                    }}
+                    onClick={onCopy}
+                    isRound
+                  />
+                </Tooltip>
+
+
+                <Tooltip
+                  label={hasCopied ? "Contact Copied!" : "Copy Contact"}
+                  closeOnClick={false}
+                  hasArrow
+                >
+                  <IconButton
+                    aria-label="telephone"
+                    variant="ghost"
+                    size="lg"
+                    fontSize="3xl"
+                    icon={<BsFillTelephoneFill />}
                     _hover={{
                       bg: "blue.500",
                       color: useColorModeValue("white", "gray.700"),
@@ -231,6 +253,13 @@ function Contact() {
             </Stack>
           </VStack>
         </Box>
+        <VStack align="center" m={'2rem'} ml={{base:0,md:'170px'}} spacing={{ base: 2, md: 4, lg: 5 }}>
+          <Box fontWeight={700} color="red.500">Made By - krishna Kumar Shakya</Box>
+          <Flex gap={'5px'} fontWeight={700} color="red.500"><MdEmail/><p>Krishnashakya7272@gmail.com</p></Flex>
+          <Flex gap={'5px'} fontWeight={700} color="red.500"><BsFillTelephoneFill/><p>+917987905532</p></Flex>
+          
+        </VStack>
+        
       </Box>
     </Flex>
   );

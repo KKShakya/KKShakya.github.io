@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Grid,Text } from "@chakra-ui/react";
-
+import { Box, Grid, IconButton, Text, Tooltip } from "@chakra-ui/react";
+import { BsMouse } from "react-icons/bs";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
@@ -13,23 +13,42 @@ function Home() {
       <Grid templateColumns={{ base: "1fr" }} m="auto" mt={"2em"}>
         <Box fontWeight={"600"} fontSize={{ base: "2rem", md: "3rem" }}>
           <Text color="#3C4048">Hi, I'm Krishna Shakya</Text>
-        <Box bgGradient={"linear-gradient(to top, #F9F9F9, #2f9cf3)"} bgClip="text" >
-        <Typewriter
-            options={{
-              strings: [
-                "Full Stack Web Developer",
-                "Skilled in MERN Stack",
-                "with 1200+hrs coding experience",
-              ],
-              autoStart: true,
-              loop: true,
-              cursor: "!",
-              delay: 70,
-              deleteSpeed: 100,
-            }}
-           
-          />
-        </Box>
+          <Box
+            bgGradient={"linear-gradient(to top, #F9F9F9, #2f9cf3)"}
+            bgClip="text"
+          >
+            <Typewriter
+              options={{
+                strings: [
+                  "Full Stack Web Developer",
+                  "Skilled in MERN Stack",
+                  "with 1200+hrs coding experience",
+                ],
+                autoStart: true,
+                loop: true,
+                cursor: "!",
+                delay: 70,
+                deleteSpeed: 100,
+              }}
+            />
+            <Tooltip label="Home">
+              <IconButton
+                aria-label="ToTop"
+                size="lg"
+                fontSize="3xl"
+                colorScheme={"red"}
+                icon={<BsMouse />}
+                
+                position="fixed"
+                right="40px"
+                bottom="30px"
+                border={"3px solid red"}
+
+                onClick={() => (document.documentElement.scrollTop = 0)}
+                isRound
+              />
+            </Tooltip>
+          </Box>
         </Box>
       </Grid>
       <About />
