@@ -89,7 +89,7 @@ function Skills() {
       
 
 
-      <Flex justify={'center'} alignContent="center" mt={'40px'} w={["300px","500px","100%"]} flexDirection={"column"} gap={20}  ml={10}>
+      <Flex justify={{base:"flex-start",sm:"center",md:"center"}} alignContent="center" mt={'40px'} w={["100%"]} flexDirection={"column"} gap={20}  ml={10}>
       <Heading textAlign={"center"} color="#2196f3">
       GitHub Stats
       </Heading>
