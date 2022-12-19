@@ -89,8 +89,10 @@ function Projects() {
               <Box>
                 <Text
                   fontWeight={"bold"}
-                  fontSize="20"
-                  style={{ color: " #2196f3" }}
+                  fontSize="20px"
+                  color= " #003fa7"
+                  borderBottom={"2px solid #003fa7"}
+                  w="fit-content"
                 >
                   Tech Stack
                 </Text>
@@ -107,7 +109,8 @@ function Projects() {
                         fontSize="14px"
                         color="red"
                         transition="all 0.3s ease-in-out"
-                        _hover={{ transform: "translateY(-5px)" }}
+                        _hover={{ transform: "translate(-5px)" }}
+                        gap="10px"
                       >
                         <Image src={tech.img} w="20px" h="20px" />
                         {tech.name}

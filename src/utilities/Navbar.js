@@ -47,7 +47,7 @@ function Navbar() {
       >
         {btns.map((btn, idx) => (
           <Link
-            activeClass="active"
+            activeClass={style.active}
             to={btn.to}
             spy={true}
             smooth={true}
