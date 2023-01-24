@@ -6,10 +6,10 @@ import {
 } from "react-vertical-timeline-component";
 
 import { FaGraduationCap } from "react-icons/fa";
-import resume from "../data/Krishna_Shakya_Resume.pdf";
-import timeline from "../data/timeline";
+import resume from "../components/data/Krishna_Shakya_Resume.pdf";
+import timeline from "../components/data/timeline";
 import "react-vertical-timeline-component/style.min.css";
-import "../style/timeline.css";
+import "../components/style/timeline.css";
 
 function About() {
   return (
@@ -82,7 +82,7 @@ function About() {
 
       {/* ?timeline for Education */}
 
-     <Box m={10} p={10}>
+     <Box p={10} w="90%" m="auto">
      <VerticalTimeline className="app__timeline-container">
         {timeline.map((elem) => (
           <VerticalTimelineElement

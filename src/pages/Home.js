@@ -12,9 +12,9 @@ function Home() {
     <div style={{ margin: "auto", width: "100%", marginTop: "10rem" }}>
       <Grid templateColumns={{ base: "1fr" }} m="auto" mt={"2em"}>
         <Box fontWeight={"600"} fontSize={{ base: "2rem", md: "3rem" }}>
-          <Text color="#3C4048">Hi, I'm Krishna Shakya</Text>
+          <Text color="#f30e4f">Hi, I'm Krishna Shakya</Text>
           <Box
-            bgGradient={"linear-gradient(to top, #F9F9F9, #2f9cf3)"}
+            bgGradient={"linear-gradient(to top, #f30e4f, #2f9cf3)"}
             bgClip="text"
           >
             <Typewriter
@@ -38,7 +38,7 @@ function Home() {
                 fontSize="3xl"
                 colorScheme={"red"}
                 icon={<BsMouse />}
-                
+                zIndex={99}
                 position="fixed"
                 right="40px"
                 bottom="30px"

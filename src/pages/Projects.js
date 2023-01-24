@@ -10,15 +10,15 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { LinkIcon } from "@chakra-ui/icons";
-import { ProjectData } from "../data/ProjectData";
+import { ProjectData } from "../components/data/ProjectData";
 
 function Projects() {
  
 
   return (
     <Box mt={100} id="projects">
-      <Heading textAlign={"center"} style={{ color: "rgb(243, 14, 79)" }}>
-        My Projects
+      <Heading textAlign={"center"} style={{ color: "rgb(243, 14, 79)" }} m="3rem">
+        My Projects 
       </Heading>
 
       {ProjectData.map((project, index) => {
@@ -34,6 +34,7 @@ function Projects() {
             fontWeight="semibold"
             fontSize="14px"
             color="white"
+            zIndex={-1}
             transition="all 0.3s ease-in-out"
             _hover={{ transform: "scale(1.1)" }}
           >
@@ -82,7 +83,7 @@ function Projects() {
                 <Heading textAlign={"center"} style={{ color: " #2196f3" }}>
                   {project.name}
                 </Heading>
-                <Text color={"black"} mt={4}>
+                <Text color={"black"} mt={4} lineHeight={2}>
                   {project.desc}
                 </Text>
               </Box>

@@ -3,6 +3,7 @@ import {
   Img,
   Menu,
   MenuButton,
+  MenuItem,
   MenuList,
   Text,
   useDisclosure,
@@ -12,17 +13,16 @@ import { Link } from "react-scroll";
 function Menus() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Menu isOpen={isOpen}>
+    <Menu display={{sm:"flex",lg:"hidden"}}  >
       <MenuButton
         display={{ sm: "inherit", md: "none" }}
         variant="ghost"
         borderRadius={5}
         aria-label="Courses"
         fontWeight="normal"
-        onMouseEnter={onOpen}
-        onMouseLeave={onClose}
         p={2}
         mr={6}
+        w={[10]}
       >
         <Img
           w={5}
@@ -31,21 +31,19 @@ function Menus() {
       </MenuButton>
       <MenuList
         p={4}
-        border="none"
-        onMouseEnter={onOpen}
-        onMouseLeave={onClose}
-        bg="#00a0f1"
+        border="1px solid red"
+        bg="#2196f3"
       >
-        <Box textAlign={"left"}>
-          <Link
+      
+       <Link
             activeClass="active"
             to="about"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-          >
-            <Text
+            >
+           <MenuItem> <Text
               p={2}
               fontWeight={600}
               _hover={{
@@ -57,8 +55,9 @@ function Menus() {
               mx={3}
             >
               About
-            </Text>
+            </Text></MenuItem>
           </Link>
+
           <Link
             activeClass="active"
             to="skills"
@@ -67,7 +66,7 @@ function Menus() {
             offset={-70}
             duration={500}
           >
-            <Text
+          <MenuItem>  <Text
               p={2}
               fontWeight={600}
               _hover={{
@@ -79,8 +78,9 @@ function Menus() {
               mx={3}
             >
               Skills
-            </Text>
+            </Text></MenuItem >
           </Link>
+          
           <Link
             activeClass="active"
             to="projects"
@@ -89,7 +89,7 @@ function Menus() {
             offset={-70}
             duration={500}
           >
-            <Text
+           <MenuItem> <Text
               p={2}
               fontWeight={600}
               _hover={{
@@ -101,13 +101,13 @@ function Menus() {
               mx={3}
             >
               Projects
-            </Text>
+            </Text></MenuItem>
           </Link>
           <a
             target={"blank"}
             href="https://drive.google.com/file/d/1s-R92_-qT7yQlM0i9dKE6cdqGhuCd022/view?usp=sharing"
           >
-            <Text
+           <MenuItem> <Text
               p={2}
               fontWeight={600}
               _hover={{
@@ -119,7 +119,7 @@ function Menus() {
               mx={3}
             >
               Resume
-            </Text>
+            </Text></ MenuItem>
           </a>
           <Link
             activeClass="active"
@@ -129,7 +129,7 @@ function Menus() {
             offset={-70}
             duration={500}
           >
-            <Text
+           <MenuItem> <Text
               p={2}
               fontWeight={500}
               _hover={{
@@ -141,9 +141,9 @@ function Menus() {
               mx={3}
             >
               Contact
-            </Text>
+            </Text></MenuItem>
           </Link>
-        </Box>
+
       </MenuList>
     </Menu>
   );

@@ -16,6 +16,7 @@ import {
   useClipboard,
   useColorModeValue,
   VStack,
+  Text
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import {
@@ -27,6 +28,9 @@ import {
 } from "react-icons/bs";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
+import developerImg from "../components/Images/developer_male.jpg"
+
+
 
 const confetti = {
   light: {
@@ -75,10 +79,7 @@ function Contact() {
       bg={useColorModeValue("gray.100", "gray.900")}
       align="center"
       justify="center"
-      css={{
-        backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
-        backgroundAttachment: "fixed",
-      }}
+     
       id="contact"
     >
       <Box
@@ -124,6 +125,7 @@ function Contact() {
                     onClick={onCopy}
                     isRound
                   />
+              
                 </Tooltip>
 
 
@@ -251,6 +253,7 @@ function Contact() {
                 </Box>
               </form>
             </Stack>
+          
           </VStack>
         </Box>
         <VStack align="center" m={'2rem'} ml={{base:0,md:'170px'}} spacing={{ base: 2, md: 4, lg: 5 }}>
@@ -261,6 +264,7 @@ function Contact() {
         </VStack>
         
       </Box>
+
     </Flex>
   );
 }
