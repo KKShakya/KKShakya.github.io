@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7f2145ab.css",
-    "main.js": "/static/js/main.2a28fde3.js",
+    "main.js": "/static/js/main.5a538947.js",
     "static/media/WakeHealthy.png": "/static/media/WakeHealthy.57f4c798bcd318b92443.png",
     "static/media/ESPN.png": "/static/media/ESPN.2c42986279471f524443.png",
     "static/media/developer_male.jpg": "/static/media/developer_male.06a1be71fcea1b255a31.jpg",
@@ -13,10 +13,10 @@
     "static/media/git2.png": "/static/media/git2.84d374ff839367b27f05.png",
     "index.html": "/index.html",
     "main.7f2145ab.css.map": "/static/css/main.7f2145ab.css.map",
-    "main.2a28fde3.js.map": "/static/js/main.2a28fde3.js.map"
+    "main.5a538947.js.map": "/static/js/main.5a538947.js.map"
   },
   "entrypoints": [
     "static/css/main.7f2145ab.css",
-    "static/js/main.2a28fde3.js"
+    "static/js/main.5a538947.js"
   ]
 }
