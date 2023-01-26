@@ -15,6 +15,7 @@ const btns = [
 ];
 
 function Navbar() {
+ 
   return (
     <Flex
       display={"flex"}
@@ -61,7 +62,7 @@ function Navbar() {
           </Link>
         ))}
         {/* resume button */}
-        <a href="https://drive.google.com/file/d/1s-R92_-qT7yQlM0i9dKE6cdqGhuCd022/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1s-R92_-qT7yQlM0i9dKE6cdqGhuCd022/view?usp=sharing" target="_blank" >
           <button className="btn">
             <Text fontWeight={500}>Resume</Text>
           </button>

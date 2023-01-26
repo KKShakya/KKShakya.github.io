@@ -12,6 +12,11 @@ import "react-vertical-timeline-component/style.min.css";
 import "../components/style/timeline.css";
 
 function About() {
+
+  const handleResume = ()=>{
+    window.open("https://drive.google.com/file/d/1s-R92_-qT7yQlM0i9dKE6cdqGhuCd022/view?usp=sharing" );
+  }
+
   return (
     <Box m="100px 0  0" id="about" background="#F9F9F9" pt={"5rem"}>
       <Heading align={"center"} color="#2196f3">
@@ -46,7 +51,9 @@ function About() {
             className="resume_button"
             textAlign={"center"}
             href={resume}
+            target="_blank" 
             download="Krishna_Shakya_Resume.pdf"
+            onClick={handleResume}
           >
             <span> </span>
             <span> </span>
