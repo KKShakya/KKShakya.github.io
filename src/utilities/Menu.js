@@ -1,17 +1,15 @@
 import {
-  Box,
   Img,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
   Text,
-  useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-scroll";
 function Menus() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Menu display={{sm:"flex",lg:"hidden"}}  >
       <MenuButton

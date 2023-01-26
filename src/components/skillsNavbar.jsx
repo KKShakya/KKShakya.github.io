@@ -1,12 +1,11 @@
 import { Box, Flex, Button } from '@chakra-ui/react'
 import React from 'react'
-import { useState } from 'react';
+
 
 
 function SkillsNavbar({handleSkill}) {
- const[style,setStyle] = useState({color:"black",bg:"#5eb3f6"});
-const handleClick = (dataset="2") =>{
-setStyle({color:"White",bg:"red"});
+
+const handleClick = (dataset="Frontend") =>{
 handleSkill(dataset);
 }
 

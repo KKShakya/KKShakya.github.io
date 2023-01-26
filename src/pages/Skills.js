@@ -5,7 +5,7 @@ import { Frontend, Backend, Tools } from "../components/data/Skills";
 import Git1 from "../components/Images/git1.png";
 import Git2 from "../components/Images/git2.png";
 import SkillsNavbar from "../components/skillsNavbar";
-import style from "../components/style/Skills.module.css";
+
 
 const Mapping = ({ data }) => {
   console.log(data.heading);
@@ -50,11 +50,11 @@ function Skills() {
   });
 
   const handleSkill = (dataset) => {
-    if (dataset == "Frontend") {
+    if (dataset === "Frontend") {
       setRender({ heading: "Frontend", data: Frontend });
-    } else if (dataset == "Backend") {
+    } else if (dataset === "Backend") {
       setRender({ heading: "Backend", data: Backend });
-    } else if (dataset == "Tools") {
+    } else if (dataset === "Tools") {
       setRender({ heading: "Tools", data: Tools });
     }
   };
