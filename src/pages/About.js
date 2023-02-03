@@ -51,7 +51,7 @@ function About() {
             className="resume_button"
             textAlign={"center"}
             href={resume}
-            download="Krishna_Shakya_Resume.pdf"
+            download="fw20_0217-Krishna-Shakya-Resume.pdf"
             onClick={handleResume}
           >
             <span> </span>
