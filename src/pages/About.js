@@ -19,7 +19,7 @@ function About() {
 
   return (
     <Box m="100px 0  0" id="about" background="#F9F9F9" pt={"5rem"}>
-      <Heading align={"center"} color="#2196f3">
+      <Heading align={"center"} color="rgb(243, 14, 79)">
         About Me
       </Heading>
       <Grid

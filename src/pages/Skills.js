@@ -61,7 +61,7 @@ function Skills() {
 
   return (
     <Box m="100px 0  10px" id="skills" p={"5rem"}>
-      <Heading textAlign={"center"} color="#2196f3">
+      <Heading textAlign={"center"} color="rgb(243, 14, 79)">
         Skills
       </Heading>
 

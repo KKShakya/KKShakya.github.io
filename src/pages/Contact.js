@@ -81,6 +81,7 @@ function Contact() {
                 base: "4xl",
                 md: "5xl",
               }}
+              color="rgb(243, 14, 79)"
             >
               Get in Touch
             </Heading>
