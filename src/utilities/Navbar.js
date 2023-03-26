@@ -1,10 +1,10 @@
 import React from "react";
-import { Flex, Box,Image,Text } from "@chakra-ui/react";
+import { Flex, Box, Image, Text } from "@chakra-ui/react";
 import style from '../components/style/Navbar.module.css'
 import { Link } from "react-scroll";
 import Menus from "./Menu";
 import logo from "../components/Images/logo.png"
-
+import resume from "../components/data/Krishna_Shakya_Resume.pdf";
 
 const btns = [
   { title: "Home", to: "home" },
@@ -15,7 +15,12 @@ const btns = [
 ];
 
 function Navbar() {
- 
+
+  const handleResume = () => {
+    window.open("https://drive.google.com/file/d/1s-R92_-qT7yQlM0i9dKE6cdqGhuCd022/view?usp=sharing");
+  }
+
+
   return (
     <Flex
       display={"flex"}
@@ -26,10 +31,10 @@ function Navbar() {
       position="fixed"
       backgroundColor="#fff"
       backdropFilter="saturate(180%) blur(0.5px)"
-     top={0}
-     w="100%"
-     h={'fit-content'}
-     zIndex={999}
+      top={0}
+      w="100%"
+      h={'fit-content'}
+      zIndex={999}
     >
       <Link
         activeClass="active"
@@ -39,7 +44,7 @@ function Navbar() {
         duration={500}
       >
         <Box w={["30%"]} onClick={() => (document.documentElement.scrollTop = 0)}>
-          <Image src={logo} w="100%" borderRadius={"5%"}/>
+          <Image src={logo} w="100%" borderRadius={"5%"} />
         </Box>
       </Link>
       <Flex
@@ -62,13 +67,18 @@ function Navbar() {
           </Link>
         ))}
         {/* resume button */}
-        <a href="https://drive.google.com/file/d/1s-R92_-qT7yQlM0i9dKE6cdqGhuCd022/view?usp=sharing" target="_blank" rel="noreferrer noopener">
+        <a href={resume}
+          download="fw20_0217-Krishna-Shakya-Resume.pdf"
+          target="_blank"
+          rel="noreferrer noopener"
+          onClick={handleResume}
+          >
           <button className="btn">
             <Text fontWeight={500}>Resume</Text>
           </button>
         </a>
       </Flex>
-      <Box display={{sm:"flex",lg:"hidden"}}><Menus /></Box>
+      <Box display={{ sm: "flex", lg: "hidden" }}><Menus /></Box>
     </Flex>
   );
 }
