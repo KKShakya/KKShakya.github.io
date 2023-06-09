@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "./static/css/main.0d404b07.css",
-    "main.js": "./static/js/main.2df428af.js",
+    "main.js": "./static/js/main.182b02fd.js",
     "static/media/WakeHealthy.png": "./static/media/WakeHealthy.57f4c798bcd318b92443.png",
     "static/media/ESPN.png": "./static/media/ESPN.2c42986279471f524443.png",
     "static/media/BlueMercury.png": "./static/media/BlueMercury.96ad58fe4e8b2f316bfa.png",
-    "static/media/BeYoung.png": "./static/media/BeYoung.d0aed9c1d1c174715514.png",
+    "static/media/Krishna_Shakya_Resume.pdf": "./static/media/Krishna_Shakya_Resume.71b56b75d1eee761f7cf.pdf",
     "static/media/Typing-tutor.png": "./static/media/Typing-tutor.d3e6dccb02b5f930c44d.png",
-    "static/media/Krishna_Shakya_Resume.pdf": "./static/media/Krishna_Shakya_Resume.c8e0ef96925a58041020.pdf",
+    "static/media/backend.png": "./static/media/backend.ab061481dcf7452f0c82.png",
     "static/media/logo.png": "./static/media/logo.b297f97e40993c53d8db.png",
     "static/media/git1.png": "./static/media/git1.932886c9580cd8772701.png",
     "static/media/git2.png": "./static/media/git2.24abc5ab3fe220a39f5c.png",
     "index.html": "./index.html",
     "main.0d404b07.css.map": "./static/css/main.0d404b07.css.map",
-    "main.2df428af.js.map": "./static/js/main.2df428af.js.map"
+    "main.182b02fd.js.map": "./static/js/main.182b02fd.js.map"
   },
   "entrypoints": [
     "static/css/main.0d404b07.css",
-    "static/js/main.2df428af.js"
+    "static/js/main.182b02fd.js"
   ]
 }
