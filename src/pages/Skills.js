@@ -1,22 +1,22 @@
 import { Box, Flex, Grid, Heading, Image, Center } from "@chakra-ui/react";
 import React, { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
-import { Frontend, Backend, Tools } from "../components/data/Skills";
-import Git1 from "../components/Images/git1.png";
-import Git2 from "../components/Images/git2.png";
+import { Frontend, Backend, Tools } from "../utils/data/Skills";
+import Git1 from "../assets/Images/git1.png";
+import Git2 from "../assets/Images/git2.png";
 import SkillsNavbar from "../components/skillsNavbar";
 
 
 const Mapping = ({ data }) => {
-  console.log(data.heading);
+
   return (
     <Box m="2em auto" boxShadow={"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}>
       <Center>
 
-        <Heading m={"1em"} fontSize={[15,20,25]}>{data.heading}</Heading>
+        <Heading m={"1em"} fontSize={[15, 20, 25]}>{data.heading}</Heading>
       </Center>
       <Grid
-      
+
         templateColumns={{
           base: "1fr",
           sm: "repeat(2,1fr)",
@@ -31,11 +31,17 @@ const Mapping = ({ data }) => {
         flexWrap={"wrap"}
       >
         {data.data.map((skill) => (
-          <Box  key={skill.id}>
+          <Box key={skill.id}>
             <Box>
-              <Image w="100%" src={skill.img} alt={skill.name} />
+              <Image w="200px" h='80px' src={skill.img} alt={skill.name} borderRadius='5px'/>
             </Box>
-            <Center>{skill.name}</Center>
+            <Center
+              pt='.3rem'
+              fontFamily={'cursive'}
+              fontWeight='500'
+              textDecor={'underline'}
+            >
+              {skill.name}</Center>
           </Box>
         ))}
       </Grid>
@@ -76,24 +82,24 @@ function Skills() {
 
       <Flex
         justify={{ base: "center", sm: "center", md: "center" }}
-      
+
         m="auto"
         mt={"4rem"}
         w="80%"
         flexDirection={"column"}
         gap={20}
-        
+
       >
         <Heading textAlign={"center"} color="#2196f3">
           GitHub Stats
         </Heading>
-        <Box w={{base:"200%",sm:"100%"}} ml={{base:"-100px",sm:"inherit"}}>
-        <GitHubCalendar
-          username="KKShakya"
-          blockMargin={10}
-          blockSize={18}
-          
-        ></GitHubCalendar>
+        <Box w={{ base: "200%", sm: "100%" }} ml={{ base: "-100px", sm: "inherit" }}>
+          <GitHubCalendar
+            username="KKShakya"
+            blockMargin={10}
+            blockSize={18}
+
+          ></GitHubCalendar>
         </Box>
       </Flex>
 

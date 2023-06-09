@@ -6,8 +6,8 @@ import {
 } from "react-vertical-timeline-component";
 
 import { FaGraduationCap } from "react-icons/fa";
-import resume from "../components/data/Krishna_Shakya_Resume.pdf";
-import timeline from "../components/data/timeline";
+import resume from "../utils/data/Krishna_Shakya_Resume.pdf";
+import timeline from "../utils/data/timeline";
 import "react-vertical-timeline-component/style.min.css";
 import "../components/style/timeline.css";
 
@@ -51,7 +51,7 @@ function About() {
             className="resume_button"
             textAlign={"center"}
             href={resume}
-            download="fw20_0217-Krishna-Shakya-Resume.pdf"
+            download="Krishna-Shakya-Resume.pdf"
             onClick={handleResume}
           >
             <span> </span>

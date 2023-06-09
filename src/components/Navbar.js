@@ -1,10 +1,10 @@
 import React from "react";
 import { Flex, Box, Image, Text } from "@chakra-ui/react";
-import style from '../components/style/Navbar.module.css'
+import style from './style/Navbar.module.css'
 import { Link } from "react-scroll";
-import Menus from "./Menu";
-import logo from "../components/Images/logo.png"
-import resume from "../components/data/Krishna_Shakya_Resume.pdf";
+import Menus from "../utils/Menu";
+import logo from "../assets/Images/logo.png"
+import resume from "../utils/data/Krishna_Shakya_Resume.pdf";
 
 const btns = [
   { title: "Home", to: "home" },
@@ -43,8 +43,8 @@ function Navbar() {
         offset={-80}
         duration={500}
       >
-        <Box w={["30%"]} onClick={() => (document.documentElement.scrollTop = 0)}>
-          <Image src={logo} w="100%" borderRadius={"5%"} />
+        <Box w={["25%"]} onClick={() => (document.documentElement.scrollTop = 0)}>
+          <Image src={logo} w="100%" borderRadius={"7%"} />
         </Box>
       </Link>
       <Flex
@@ -68,7 +68,7 @@ function Navbar() {
         ))}
         {/* resume button */}
         <a href={resume}
-          download="fw20_0217-Krishna-Shakya-Resume.pdf"
+          download="Krishna-Shakya-Resume.pdf"
           target="_blank"
           rel="noreferrer noopener"
           onClick={handleResume}

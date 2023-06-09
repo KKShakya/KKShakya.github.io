@@ -1,9 +1,12 @@
-import bluemercury from '../Images/BlueMercury.png'
-import beyoung from '../Images/BeYoung.png'
-import WakeHealhty from '../Images/WakeHealthy.png'
-import ESPN from '../Images/ESPN.png'
-import TYPING from '../Images/Typing-tutor.png'
-export const ProjectData = [
+import bluemercury from '../../assets/Images/BlueMercury.png'
+import WakeHealhty from '../../assets/Images/WakeHealthy.png'
+import ESPN from '../../assets/Images/ESPN.png'
+import TYPING from '../../assets/Images/Typing-tutor.png'
+import Backend from '../../assets/Images/backend.png'
+
+
+
+export const FrontEnd = [
 
 
     //Wake Healthy
@@ -144,6 +147,54 @@ export const ProjectData = [
                 "name": "Puppeteer",
                 "img": "https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png"
             },
+        ]
+    },
+
+
+
+]
+
+
+
+
+export const BackEnd = [
+
+
+    
+
+
+    //Food_delivery app
+    {
+        "name": "Food delivery Api",
+        "desc": "A banckend APi built using expressJs on MongoDB database. A user can create his profile, then select menus and order food. The Curl link is on Github.",
+        "img": Backend,
+        "git": "https://github.com/KKShakya/Food_delivery",
+        "deploy": "https://drive.google.com/file/d/1ygD48xS5eMfEB9xA-1CeK70Thpg_KjNr/view?usp=sharing",
+        "techStack": [
+       
+            {
+                "name": "JavaScript",
+                "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+
+            },
+
+            {
+                "name": "NodeJs",
+                "img": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+            },
+            {
+                "name": "MongoDB",
+                "img": "https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1626694700/hevo-blog/MongoDB-sm-logo-500x400-1-1.gif"
+            },
+            {
+                "name": "Express",
+                "img": "https://miro.medium.com/max/1200/1*EKW3XazCN98jcVrlEP3H8g.png",
+
+            },
+        
+            {
+                "name": "JWT",
+                "img": "https://miro.medium.com/v2/resize:fit:800/0*WddOBoMIYbSPNGSD.png"            },
         ]
     },
 

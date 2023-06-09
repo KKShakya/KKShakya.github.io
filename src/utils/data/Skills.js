@@ -16,13 +16,13 @@ export const Frontend = [
     id: 3,
     name: "HTML",
     desc: "HTML is the standard markup language for creating Web pages",
-    img: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
   },
   {
     id: 4,
     name: "CSS",
     desc: "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.",
-    img: "https://dkl2gez3gijkp.cloudfront.net/lib/uploads/2012/12/css-3-help1.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
   },
   {
     id: 5,
@@ -36,13 +36,13 @@ export const Frontend = [
     id: 7,
     name: "NextJS",
     desc: "Next. js is a React framework that enables several extra features, including server-side rendering and generating static websites",
-    img: "https://soshace.com/wp-content/uploads/2019/10/Getting-Started-with-NextJS.jpg",
+    img: "https://img-c.udemycdn.com/course/480x270/3873464_403c.jpg",
   },
   {
     id: 8,
     name: "Redux",
     desc: "Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments, and are easy to test",
-    img: "https://w7.pngwing.com/pngs/413/852/png-transparent-redux-react-logo-javascript-dq-purple-violet-text-thumbnail.png",
+    img: "https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55",
   },
 ];
 
@@ -86,7 +86,7 @@ export const Tools = [
     id: 1,
     name: "NPM",
     desc: "npm is the package manager for the Node JavaScript platform",
-    img: "https://miro.medium.com/max/548/1*o474X_2eTiF2Dnn39h6Rjg.jpeg",
+    img: "https://www.zdnet.com/a/img/resize/cacc504508a31ccfdf6eb91ff199c529b2d3bb7b/2020/01/13/7b52414d-132a-4ef9-b050-0f16e37f433b/npm.png?auto=webp&fit=crop&height=1200&width=1200",
   },
   {
     id: 2,
@@ -99,7 +99,7 @@ export const Tools = [
     id: 3,
     name: "VsCode",
     desc: "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.",
-    img: "https://yt3.ggpht.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj",
+    img: "https://yt3.googleusercontent.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj",
   },
   {
     id: 4,

@@ -10,18 +10,48 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { LinkIcon } from "@chakra-ui/icons";
-import { ProjectData } from "../components/data/ProjectData";
+import { FrontEnd, BackEnd } from "../utils/data/ProjectData";
+import { useState } from "react";
 
 function Projects() {
- 
+
+  const [data, setData] = useState(FrontEnd)
+
+
+  const handleClick = (dataset = "Frontend") => {
+    dataset === "Frontend" ? setData(FrontEnd) : setData(BackEnd);
+  }
+
+
 
   return (
     <Box mt={100} id="projects">
       <Heading textAlign={"center"} style={{ color: "rgb(243, 14, 79)" }} m="3rem">
-        My Projects 
+        My Projects
       </Heading>
 
-      {ProjectData.map((project, index) => {
+
+      <Flex gap='1em' m="4em auto" justify={'center'}>
+        <Button
+          fontSize={[10, 12, 15]}
+          onClick={() => handleClick("Frontend")}
+          color="black"
+          _focus={{ color: "#fff", bg: "red" }}
+        >
+          Frontend
+        </Button>
+
+        <Button
+          fontSize={[10, 12, 15]}
+          onClick={() => handleClick("Backend")}
+          color="black"
+          _focus={{ color: "#fff", bg: "red" }}
+        >
+          Backend
+        </Button>
+      </Flex>
+
+      {data.map((project, index) => {
         return (
           <Grid
             w="80%"
@@ -91,7 +121,7 @@ function Projects() {
                 <Text
                   fontWeight={"bold"}
                   fontSize="20px"
-                  color= " #003fa7"
+                  color=" #003fa7"
                   borderBottom={"2px solid #003fa7"}
                   w="fit-content"
                 >
