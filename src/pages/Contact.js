@@ -248,8 +248,6 @@ function Contact() {
           <Box fontWeight={700} color="red.500">Made By - krishna Kumar Shakya</Box>
           <Flex gap={'5px'} fontWeight={700} color="red.500"><MdEmail/><p>Krishnashakya7272@gmail.com</p></Flex>
           <Flex gap={'5px'} fontWeight={700} color="red.500"><BsFillTelephoneFill/><p>+917987905532</p></Flex>
-          <Flex gap={'5px'} fontWeight={700} color="red.500" fontSize="10"><p>Ref From: Akash Kumar Panda </p></Flex>
-          
         </VStack>
         
       </Box>

@@ -44,6 +44,12 @@ export const Frontend = [
     desc: "Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments, and are easy to test",
     img: "https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55",
   },
+  {
+    id: 9,
+    name: "Material UI",
+    desc: "Material UI is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications",
+    img: "https://www.remoterocketship.com/_next/image?url=%2Fimages%2Fblog%2FMaterial%20UI-icon-for-blog.jpg&w=640&q=75",
+  },
 ];
 
 export const Backend  = [
@@ -78,6 +84,12 @@ export const Backend  = [
     name: "Express",
     desc: "Express is a node js web application framework that provides broad features for building web and mobile applications",
     img: "https://miro.medium.com/max/1200/1*EKW3XazCN98jcVrlEP3H8g.png",
+  },
+  {
+    id: 6,
+    name: "Sequelize",
+    desc: "Sequelize is a modern TypeScript and Node.js ORM for Oracle, Postgres, MySQL, MariaDB, SQLite and SQL Server, and more.",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaa90od4jPrZxQ_Rbo721GYTiR3ESbwZinQ&s",
   },
 ]
 
