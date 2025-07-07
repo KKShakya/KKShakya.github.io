@@ -4,7 +4,7 @@ const timeline = [
     title: "Software Developer (Full-time)",
     university: "Green Catalysator IT - AB",
     location: "Bangalore, Karnataka",
-    date: "Jun 2023 - Present",
+    date: "Jun 2023 - October 2024",
   },
   {
     id: 2,
